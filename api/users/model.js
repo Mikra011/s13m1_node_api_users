@@ -41,7 +41,7 @@ const update = (id, changes) => {
   const user = users.find(user => user.id === id)
   if (!user) return Promise.resolve(null)
 
-  const updatedUser = { ...changes, id }
+  const updatedUser = {  id, ...changes} // I have changed the order to match with the rest
   users = users.map(d => (d.id === id) ? updatedUser : d)
   return Promise.resolve(updatedUser)
 }
