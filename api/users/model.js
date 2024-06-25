@@ -12,7 +12,7 @@ const initializeUsers = () => ([
   { id: getId(), name: 'Mary Edwards', bio: 'super hero' },
 ])
 
-// FAKE IN-MEMORY USERS "TABLE"
+// FAKE IN-MEMORY USERS "TABLE"!
 let users = initializeUsers()
 
 // DATABASE ACCESS FUNCTIONS
